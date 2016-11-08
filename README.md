@@ -232,6 +232,35 @@ public class TryCatch
      }
  }
 ```
+เกิดความผิดพลาดไม่สามารถรันได้ แก้ปัญหาดังนี้
+```
+using System;
+public class TryCatch
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+
+            int value = 800000000;
+            checked // check for overflow
+            {
+                int square = value * value;
+                Console.WriteLine("{0} ^ 2 = {1}", value, square);
+            }
+        }
+        catch (OverflowException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    
+        }
+}
+```
+ผลที่รันได้คือ
+
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture2.PNG?raw=true)
+
 
 ###1.1.3. คำสั่ง ```throw```
 
