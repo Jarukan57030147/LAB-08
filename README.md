@@ -185,6 +185,34 @@ public class TryCatch
      }
  }
 ```
+เกิดความผิดพลาดไม่สามารถรันได้ แก้ปัญหาดังนี้
+```
+using System;
+public class TryCatch
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+            int a = 0;
+            int b = 10;
+            b /= a;
+            Console.WriteLine(a);
+        }
+        catch (NullReferenceException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+    }
+    ```
+ผลที่ได้
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture1.PNG?raw=true)
+
 ###3.
 ``` csharp
 using System;
