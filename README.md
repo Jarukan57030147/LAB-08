@@ -330,7 +330,24 @@ public class ExceptionLearning
         throw new _____________________();
     }
  }
-````
+```
+```
+1.	DivideByZeroException
+```
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture3.PNG?raw=true)
+
+```
+2.	NullReferenceException
+```
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture4.PNG?raw=true)
+```
+3.	FileNotFoundException
+```
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture5.PNG?raw=true)
+```
+4.	FormatException
+```
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture6.PNG?raw=true)
 
 ###เรื่องของ exception นี้ศึกษาเพิ่มเติมได้ [ที่นี่](http://msdn.microsoft.com/en-us/library/vstudio/2w8f0bss%28v=vs.100%29.aspx)
 
