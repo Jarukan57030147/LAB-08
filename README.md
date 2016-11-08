@@ -168,6 +168,9 @@ public class TryCatch
      }
  }
 ```
+ไม่มีความผิดพลาดสามารถรันได้ปกติ ได้ผลดังนี้
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture.PNG?raw=true)
+
 ###2.
 ``` csharp
 using System;
