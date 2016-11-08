@@ -214,6 +214,7 @@ public class TryCatch
 ผลที่ได้
 ![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture1.PNG?raw=true)
 
+```
 ###3.
 ``` csharp
 using System;
