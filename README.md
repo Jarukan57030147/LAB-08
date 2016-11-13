@@ -504,6 +504,40 @@ this line is always execute
 
 1. ถ้าค่าที่ผู้ใช้ป้อน เท่ากับ ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Hooray, You win!!”``` ออกทางหน้าจอ มิฉะนั้นให้พิมพ์คำว่า ```“Sorry, You loss!!”```
 
+```
+using System;
+namespace RandomNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Random random = new Random();
+            int randomNumber = random.Next(0, 9);
+            Console.WriteLine("randomNumber is: " + randomNumber);
+            try
+            {
+                Console.Write("Enter Number 0-9 : ");
+                int randomNumber1 = Convert.ToInt32(Console.ReadLine());
+                if (randomNumber1 == randomNumber)
+                {
+                    Console.WriteLine("Hooray, You win!!");
+                }
+                else
+                    Console.WriteLine("Sorry, You loss!!");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error : " + e.ToString());
+            }
+        }
+    }
+}
+```
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture8.PNG?raw=true)
+![](https://github.com/Jarukan57030147/LAB-08/blob/master/Capture9.PNG?raw=true)
+
 ###1.2.3.	คำสั่ง ```if``` ซ้อนกัน (nested if)
 คำสั่ง ```if``` สามารถเขียนซ้อนกันเป็นชั้นได้ เรียกว่า nested if มีรูปแบบดังนี้
 ####รูปแบบของคำสั่ง nested if
