@@ -659,8 +659,6 @@ public class IfLearning
                     Console.WriteLine("Grade : B+");
                 else
                     Console.WriteLine("Grade : A");
-            
-
         }
             catch (Exception e)
             {
